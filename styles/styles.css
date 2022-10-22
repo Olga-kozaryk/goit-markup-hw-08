@@ -1,0 +1,220 @@
+:root {
+    --primery--color:#757575;
+    --title--color:#212121;
+    --blac--color:#000000;
+    --white--color:#FFFFFF;
+    --blue--color:#2196F3;
+    --btn--hover--color: #188ce8;
+    --section--color:#2F303A;
+    --body--bg--color:#F5F5F5;
+    --card--bg--color:#EEEEEE;
+    --section--bg--color:#F5F4FA;
+    --logo--fonts:'Raleway', sans-serif;
+    --primery--fonts:'Roboto', sans-serif;
+    
+
+
+}
+body {
+   font-family: var(--primery--fonts);
+   color:var(--primery--color) ;
+ }
+
+.link{
+    text-decoration: none;
+}
+
+.list{
+    list-style: none;
+}
+
+/*header*/
+.logo{
+font-family: var(--logo--fonts);
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+color: var(--blue--color);
+background: var(--white--color);
+letter-spacing: 3%;
+}
+.logo-part{
+    color:var(--blac--color);
+}
+.nav-link {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 2%;
+color:var(--title--color);
+}
+.nav-link:hover,
+.nav-link:focus{
+    color: var(--blue--color);
+}
+.current{
+    color: var(--blue--color);
+}
+
+.adres-nav{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+color: var(--primery--color);
+letter-spacing: 2%;
+}
+.adres-nav:hover,
+.adres-nav:focus{
+    color: var(--blue--color);
+}
+
+/*main*/
+/*section hero*/
+.hero{
+background: var(--section--color);
+}
+.title-hero{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 6%;
+    color: var(--white--color); 
+    text-transform: uppercase;
+}
+.hero-button{
+    font-family: var(--primery--fonts);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 6%;
+    color: var(--white--color);
+    background: var(--blue--color);
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+
+    }
+    .hero-button:hover,
+    .hero-button:focus{
+    background: var(--btn--hover--color);
+    }
+
+        /*section Skills*/
+.title-skills{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 3%;
+    color: var(--title--color);
+}
+.p-skills{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 3%;
+color: var(--primery--color);
+}
+/*section work*/
+.title-work{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 3%;
+    color: var(--title--color);
+}
+/*section team*/
+.team{
+background: var(--section--bg--color);
+}
+.li-team{
+    background: var(--white--color);
+    width: 270px;
+}
+.title-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 3%;
+    color: var(--title--color);
+}
+.office{
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 3%;
+    line-height: 1.19; 
+    color: var(--primery--color);
+}
+/*footer*/
+.footer{
+    background: var(--section--color);
+}
+.logo-footer{
+    color: var(--white--color);
+}
+.adres{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 3%;
+    color: var(--white--color);
+}
+.adres-footer{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71; 
+    letter-spacing: 3%;
+    color: rgba(255, 255, 255, 0.6);
+}
+.adres:hover,
+.adres:focus{
+    color: var(--blue--color);
+}
+.adres-footer:hover,
+.adres-footer:focus{
+    color: var(--blue--color);
+}
+
+
+/*portfolio.html*/
+
+.section{
+    background: var(--body--bg--color);
+}
+.btn-filter{
+    font-family: var(--primery--fonts);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.16;
+    letter-spacing: 2%;
+    color: var(--title--color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    .btn-filter:hover,
+    .btn-filter:focus{
+        color: var(--white--color);
+        background: var(--blue--color);
+    }
+    .li-project{
+      border: 1px solid var(--card--bg--color);
+      width: 370px;
+
+    }
+    .card{
+        text-decoration: none;  
+    }
+    .title-card{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        color: var(--title--color);
+    }
+    .p-card{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.87;
+        color: var(--primery--color);
+    }
