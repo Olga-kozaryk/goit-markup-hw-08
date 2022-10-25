@@ -16,7 +16,11 @@
 
 }
 body {
+    margin: 0;
    font-family: var(--primery--fonts);
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
    color:var(--primery--color) ;
  }
 
@@ -26,6 +30,8 @@ body {
 
 .list{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /*header*/
@@ -34,16 +40,16 @@ font-family: var(--logo--fonts);
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
+letter-spacing: 3%;
 color: var(--blue--color);
 background: var(--white--color);
-letter-spacing: 3%;
+
 }
 .logo-part{
     color:var(--blac--color);
 }
 .nav-link {
 font-weight: 500;
-font-size: 14px;
 line-height: 1.14;
 letter-spacing: 2%;
 color:var(--title--color);
@@ -58,7 +64,6 @@ color:var(--title--color);
 
 .adres-nav{
 font-weight: 500;
-font-size: 14px;
 line-height: 1.14;
 color: var(--primery--color);
 letter-spacing: 2%;
@@ -102,17 +107,12 @@ background: var(--section--color);
         /*section Skills*/
 .title-skills{
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 3%;
     color: var(--title--color);
 }
 .p-skills{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 3%;
-color: var(--primery--color);
+   
 }
 /*section work*/
 .title-work{
@@ -138,12 +138,10 @@ background: var(--section--bg--color);
     color: var(--title--color);
 }
 .office{
-    font-weight: 400;
     font-size: 16px;
     letter-spacing: 3%;
     line-height: 1.19; 
-    color: var(--primery--color);
-}
+    }
 /*footer*/
 .footer{
     background: var(--section--color);
@@ -153,17 +151,11 @@ background: var(--section--bg--color);
 }
 .adres{
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 3%;
+     letter-spacing: 3%;
     color: var(--white--color);
 }
 .adres-footer{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71; 
+ 
     letter-spacing: 3%;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -213,7 +205,7 @@ background: var(--section--bg--color);
         color: var(--title--color);
     }
     .p-card{
-        font-weight: 400;
+        
         font-size: 16px;
         line-height: 1.87;
         color: var(--primery--color);
