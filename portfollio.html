@@ -7,31 +7,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Портфоліо</title>
 </head>
 <body>
     <!--Шапка-->
-    <header>
-        <nav>
+    <header class="header">
+        <div class="container header-container">
+
+        <nav class="nav-flex">
             <a class="link logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
-            <ul class="list">
-                <li><a class="nav-link link " href="./index.html">Студія</a></li>
-                <li><a class="nav-link link current" href="./portfollio.html">Портфоліо</a></li>
-                <li><a class="nav-link link" href="#">Контакти</a></li>
+            <ul class="nav-flex list">
+                <li class="item"><a class="nav-link link " href="./index.html">Студія</a></li>
+                <li class="item"><a class="nav-link link current" href="./portfollio.html">Портфоліо</a></li>
+                <li class="item"><a class="nav-link link" href="#">Контакти</a></li>
             </ul>
         </nav>
-        <ul class="list">
-            <li><a class="adres-nav link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="adres-nav link" href="tel:+380961111111">+380961111111</a></li>
-              </ul>
+        <ul class="address-flex list">
+            <li class="item"><a class="adres-nav link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="item"><a class="adres-nav link" href="tel:+380961111111">+380961111111</a></li>
+            </ul>
+            
+        </div>
     </header>
+    <!--Основний контент-->
     <main>
         
 <section class="section">
-
+    <div class="container">
     <h1 hidden>фільтр</h1>
-    <ul class="list">
+    <ul class="list list-btn">
         <li><button class="btn-filter" type="button">Усі</button></li>
         <li><button class="btn-filter" type="button">Веб-сайти</button></li>
         <li><button class="btn-filter" type="button">Додатки</button></li>
@@ -41,7 +47,7 @@
 
 
     <h2 hidden>Портфоліо</h2>
-    <ul class="list">
+    <ul class="list wrap-flex">
         <li class="li-project"> <a class="card" href="#">
             <img src="./images/texnokryak.jpg" alt="веб-сайт Технокряк" width="370">
             <h3 class="title-card">Технокряк</h3>
@@ -98,19 +104,21 @@
         </li>
 
     </ul>
-
+</div>
 </section>
     </main>
       <!--підвал-->
       <footer class="footer">
+        <div class="container">
         <a class="link logo footer" href="./index.html">Web<span class="logo-footer">Studio</span></a>
-        <address>
+        <address class="address">
             <ul class="list">
                 <li><a class="link adres" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">г. Київ, пр-т Леси Українки, 26</a> </li>
                 <li><a class="link adres-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a class="link adres-footer" href="tel:+380961111111">+380961111111</a></li>
             </ul>
         </address>
+    </div>
     </footer>
 </body>
 </html>
