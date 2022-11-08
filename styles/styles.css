@@ -22,11 +22,15 @@
     p {
         margin: 0;
     }
+
     ul {
         margin: 0;
         padding: 0;
     }
         
+    img {
+        display: block;
+    }
     body {
         margin: 0;
 
@@ -141,8 +145,6 @@
     .section{
         padding-top: 94px;
         padding-bottom: 94px;
-
-        background: var(--body--bg--color);
     }
     
     /*section hero*/
@@ -159,9 +161,6 @@
     margin: 0 auto;
     color: var(--white--color);     
     width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 280px;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -253,7 +252,6 @@
         margin-right: 30px;
     }
     .title-name{
-        margin-top: 30px;
         margin-bottom: 10px;
         font-weight: 500;
         font-size: 16px;
@@ -262,15 +260,23 @@
         color: var(--title--color);
     }
     .office{
-        margin-top: 0%;
-        margin-bottom: 0%;
+       
         font-size: 16px;
         letter-spacing: 3%;
         line-height: 1.19; 
         }
+
+        .wrap-name{ 
+        padding: 30px 61px;
+  
+        }
     /*footer*/
-    .footer{
+    .footer {
         background: var(--section--color);
+        margin: 0;
+    }
+
+    .footer-container{
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -278,14 +284,21 @@
     .logo-footer{
         color: var(--white--color);
     }
+
+
+
     .address{
         margin-top: 20px;
+        font-style: normal;
     }
     .adres{
     
         font-style: normal;
         letter-spacing: 3%;
         color: var(--white--color);
+    }
+    .li-address:not(:last-child){
+    margin-bottom: 9px;
     }
     .adres-footer{
     
@@ -308,7 +321,7 @@
         display: flex;
         justify-content: center;
         gap: 8px;
-        margin-bottom: 34px;
+        margin-bottom: 50px;
     }
 
     .btn-filter{
@@ -337,10 +350,19 @@
             gap: 30px;
         }
         .li-project{
-        border: 1px solid var(--card--bg--color);
+      
         width: 370px;
-    
-        }
+            }
+
+        .wrap-card{
+
+            border-left: 1px solid var(--card--bg--color);
+            border-bottom: 1px solid var(--card--bg--color);
+            border-right: 1px solid var(--card--bg--color);
+           
+            padding: 20px 24px;
+        }   
+
         .card{
             text-decoration: none;  
         
