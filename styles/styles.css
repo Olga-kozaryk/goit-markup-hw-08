@@ -132,7 +132,6 @@
  
     .adres-nav{
         color: var(--primery--color);
-        fill:var(-primery--color) ;
         font-weight: 500;
         line-height: 1.14;
      
@@ -140,8 +139,8 @@
     .adres-nav:hover,
     .adres-nav:focus{
         color: var(--blue--color);
-        fill: var(--blue--color);
     }
+    .adres-nav-icons{}
   
     /*main*/
 
