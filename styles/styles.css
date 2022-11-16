@@ -87,7 +87,7 @@
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
-        letter-spacing: 3%;
+        letter-spacing: 0.03em;
     
 
     }
@@ -131,9 +131,12 @@
     }
  
     .adres-nav{
+        display: flex;
+
         color: var(--primery--color);
         font-weight: 500;
         line-height: 1.14;
+        align-items: center;
      
     }
     .adres-nav:hover,
@@ -260,6 +263,7 @@
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
+        letter-spacing: 0.03em;
         color: var(--title--color);
         text-align: center;
     }
@@ -294,13 +298,13 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
-        letter-spacing: 3%;
+        letter-spacing: 0.03em;
         color: var(--title--color);
     }
     .office{
        margin-bottom: 16px;
         font-size: 16px;
-        letter-spacing: 3%;
+        letter-spacing: 0.03em;
         line-height: 1.19; 
         }
 
@@ -327,16 +331,17 @@
         height: 100%;
         background:transparent;
         border-radius: 50%;
+        color: var(--icons--color);
         }
     .team-soc-icons{
-        fill:var(--icons--color) ;
+        fill:currentColor ;
         }
-    .team-soc-link:hover{
+    .team-soc-link:hover,
+    .team-soc-link:focus{
     background-color: var(--blue--color);
+    color: var(--white--color);
         }
-    .team-soc-link:hover .team-soc-icons{
-        fill: var(--white--color);
-    }   
+
 
     /*клієнти*/
     .client-logo-list{
@@ -358,16 +363,18 @@
         width: 100%;
         height: 100%;
         background:transparent;  
+        color: var(--icons--color);
     }
     .client-logo-icons{
-        fill:var(--icons--color) ; 
+        fill: currentColor; 
     }
     .client-logo-item:hover{
         border-color: var(--blue--color);   
     }
-    .client-logo-item:hover .client-logo-icons{
-        fill: var(--blue--color);
+    .client-logo-item:hover .client-logo-link{
+        color: var(--blue--color);
     }
+
     /*footer*/
     .footer {
         background: var(--section--color);
@@ -394,7 +401,7 @@
     .adres{
     
         font-style: normal;
-        letter-spacing: 3%;
+        letter-spacing: 0.03em;
         color: var(--white--color);
     }
     .li-address:not(:last-child){
@@ -402,7 +409,7 @@
     }
     .adres-footer{
     
-        letter-spacing: 3%;
+        letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
     }
     .adres:hover,
@@ -446,7 +453,8 @@
     .footer-soc-icons{
         fill: var(--white--color);
     }
-    .footer-soc-link:hover{
+    .footer-soc-link:hover,
+    .footer-soc-link:focus{
         background-color: var(--blue--color);
             }
     
@@ -467,7 +475,7 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 1.16;
-        letter-spacing: 2%;
+        letter-spacing: 0.03em;
         text-align: center;
         color: var(--title--color);
         border: none;
@@ -513,6 +521,7 @@
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
+        letter-spacing: 0.06em;
         color: var(--title--color);
         }
     .p-card{
@@ -520,5 +529,6 @@
         margin-bottom: 0px;
         font-size: 16px;
         line-height: 1.87;
+        letter-spacing: 0.03em;
         color: var(--primery--color);
         }
