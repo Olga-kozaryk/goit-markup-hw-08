@@ -352,8 +352,7 @@
     .client-logo-item{
         width: 170px;
         height: 92px;
-        border: 1px solid var(--icons--color);
-        border-radius: 4px;  
+
     }
     .client-logo-link{
         display: flex;
@@ -364,16 +363,17 @@
         height: 100%;
         background:transparent;  
         color: var(--icons--color);
+        border: 1px solid var(--icons--color);
+        border-radius: 4px;  
     }
     .client-logo-icons{
         fill: currentColor; 
     }
-    .client-logo-item:hover{
-        border-color: var(--blue--color);   
-    }
-    .client-logo-item:hover .client-logo-link{
-        color: var(--blue--color);
-    }
+    .client-logo-link:hover,
+    .client-logo-link:focus{
+    border-color: var(--blue--color);
+    color: var(--blue--color);}
+
 
     /*footer*/
     .footer {
