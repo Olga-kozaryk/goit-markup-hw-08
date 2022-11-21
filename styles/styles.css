@@ -57,9 +57,6 @@
 
     /*header*/
     .header{
-        
-        padding-top: 24px;
-        padding-bottom: 25px;
         border-bottom: 1px solid #ECECEC;
     }
     .container{
@@ -101,7 +98,8 @@
         margin-right: auto;
     }
 
-    .item{
+    .item-current{
+        display: flex;
  
         }
     .nav-flex .item:not(:last-child){
@@ -109,18 +107,38 @@
         }
 
     .nav-link {
+        position: relative;
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
         color:var(--title--color);
         font-weight: 500;
         line-height: 1.14;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     }
     .nav-link:hover,
     .nav-link:focus{
         color: var(--blue--color);
     }
+
     .current{
         color: var(--blue--color);
     }
+
+    .nav-link.current::after{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        content:"";
+        width:100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: currentColor;
+    }
+
     .address-flex{
         display: flex;
         align-items: center;
@@ -137,6 +155,7 @@
         font-weight: 500;
         line-height: 1.14;
         align-items: center;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
      
     }
     .adres-nav:hover,
@@ -190,7 +209,7 @@
         display: inline-block;
         margin-top: 30px;
 
-        background: var(--blue--color);
+        background-color: var(--blue--color);
         color: var(--white--color);
         font-family: var(--primery--fonts);
         font-weight: 700;
@@ -203,10 +222,12 @@
         padding: 10px 32px;
         min-width: 216px;
 
+        transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
         }
     .hero-button:hover,
     .hero-button:focus{
-        background: var(--btn--hover--color);
+        background-color: var(--btn--hover--color);
         }
 
             /*section Skills*/
@@ -270,11 +291,33 @@
 
     .work-flex{
         display: flex;  
+        gap: 30px;
     }
+    .item-work{
+    position: relative;
+    display: block;
+ 
+}
 
-    .item-work:not(:last-child){
-        margin-right: 30px;
+    .koment{
+        position: absolute;
+        bottom: 0px;
+
+        padding: 27px 0;
+
+        width: 100%;
+        height: 70px;
+        background-color: rgba(47, 48, 58, 0.8);;
+
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--white--color);
     }
+    
 
     /*section team*/
     .team-flex{
@@ -332,6 +375,10 @@
         background:transparent;
         border-radius: 50%;
         color: var(--icons--color);
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
         }
     .team-soc-icons{
         fill:currentColor ;
@@ -365,6 +412,9 @@
         color: var(--icons--color);
         border: 1px solid var(--icons--color);
         border-radius: 4px;  
+
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .client-logo-icons{
         fill: currentColor; 
@@ -403,6 +453,8 @@
         font-style: normal;
         letter-spacing: 0.03em;
         color: var(--white--color);
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .li-address:not(:last-child){
     margin-bottom: 9px;
@@ -411,6 +463,8 @@
     
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .adres:hover,
     .adres:focus{
@@ -419,6 +473,7 @@
     .adres-footer:hover,
     .adres-footer:focus{
         color: var(--blue--color);
+
     }
     .footer-soc-container{}
     .title-futer{
@@ -449,6 +504,8 @@
         height: 100%;
         background:rgba(255, 255, 255, 0.1);
         border-radius: 50%;
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .footer-soc-icons{
         fill: var(--white--color);
@@ -481,11 +538,15 @@
         border: none;
         border-radius: 4px;
         cursor: pointer;
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
     .btn-filter:hover,
     .btn-filter:focus{
-        color: var(--white--color);
         background: var(--blue--color);
+        color: var(--white--color);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         }
 
@@ -495,7 +556,11 @@
         gap: 30px;
         }
     .li-project{
+        position: relative;
+        overflow: hidden;
         width: 370px;
+
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
         .li-project:hover,
         .li-project:focus{
@@ -532,3 +597,78 @@
         letter-spacing: 0.03em;
         color: var(--primery--color);
         }
+    .box{
+        position: relative;
+        overflow: hidden;
+        width: 370px;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--blue--color);
+      
+        transform: translatey(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        padding: 63px 24px;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: var(--white--color);
+    }
+    .li-project:hover .overlay,
+    .li-project:focus .overlay{
+        transform: translatey(0);
+    }
+    .backdrop{
+        position: fixed;
+        top:0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+
+        transition: opasity 350ms linear, visibility 350ms linear;
+    }
+    .modal{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 528px;
+        min-height: 581px;
+        background-color: var(--white--color);
+        border-radius: 4px;
+
+        transform: translate(-50%,-50%) scale(1);
+        transition: trnsform 350ms linear;
+
+    }
+
+    .backdrop .is-hidden .modal{
+        transform: translate(-50%,-50%) scale(0); 
+    }
+
+    .modal-close{
+        position: absolute;
+        right: 8px;
+        top: 8px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .is-hidden{
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
