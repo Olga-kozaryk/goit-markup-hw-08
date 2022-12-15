@@ -13,32 +13,74 @@
 </head>
 <body>
     <!--Шапка-->
-   <!-- <header class="header header__portfollio">
+    <header class="header header__portfollio">
         <div class="container header__container">
-
-            <nav class="navigation navigation__flex">
-                <a class="link logo" href="./index.html">Web<span class="logo__part">Studio</span></a>
-                <ul class="list navigation__flex ">
-                    <li class="nav-item"><a class="link nav-item__link" href="./index.html">Студія</a></li>
-                    <li class="nav-item"><a class="link current nav-item__link" href="./portfollio.html">Портфоліо</a></li>
-                    <li class="nav-item"><a class="link nav-item__link" href="#">Контакти</a></li>
-                </ul>
-            </nav>
-            <ul class="list address address__flex ">
-                <li class="contact"><a class="link contact__link" href="mailto:info@devstudio.com">
-                    <svg class="contact__icons" width="16" height="12">
-                        <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com</a></li>
-                <li class="contact"><a class="link contact__link" href="tel:+380961111111">
-                    <svg class="contact__icons" width="10" height="16">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>
-                    +380961111111</a></li>
-                </ul>
-                
+        <div class="header__logo">
+            <a class="link logo" href="./index.html">Web<span class="logo__part">Studio</span></a>
             </div>
-        </header>-->
+            <nav class="navigation navigation__flex">
+                <ul class="list list__menu">
+                <li class="nav-item"><a class="link nav-item__link" href="./index.html">Студія</a></li>
+                <li class="nav-item"><a class="link current nav-item__link" href="./portfollio.html">Портфоліо</a></li>
+                <li class="nav-item"><a class="link nav-item__link" href="#">Контакти</a></li>
+            </ul>
+        </nav>
+        <ul class="list address address__flex ">
+            <li class="contact"><a class="link contact__link" href="mailto:info@devstudio.com">
+                <svg class="contact__icons" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a></li>
+            <li class="contact"><a class="link contact__link" href="tel:+380961111111">
+                <svg class="contact__icons" width="10" height="16">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +380961111111</a></li>
+            </ul>
+            <button class="header__btn" type="button" data-menu-open>
+                <svg class="header__btn-icons" width="24" height="16">
+                    <use href="./images/icons.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
+        </div>
+        <div class=" mob-menu is-hidden" data-menu>
+            <div class="container-mob">
+            <button class="mob-btn-close" type="button" data-menu-close>
+                <svg class="mob-btn-icons" width="40" height="40">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <ul class="list list-mob-menu">
+                <li class="mob-item"><a class="link mob-item__link" href="./index.html">Студія</a></li>
+                <li class="mob-item"><a class="link mob-item__link" href="./portfollio.html">Портфоліо</a></li>
+                <li class="mob-item"><a class="link mob-item__link" href="#">Контакти</a></li>
+            </ul>
+            <div class="contact-mob-menu">
+            <ul class="list address-mob ">
+                <li class="contact-mob"><a class="link contact-mob__link" href="tel:+380961111111">
+                    +380961111111</a></li>
+                <li class="contact-mob"><a class="link contact-mail__link" href="mailto:info@devstudio.com">
+                info@devstudio.com</a></li>
+               
+                </ul>
+            <ul class="list soc-mob-menu">
+                <li class="soc-mob"><a class="link soc-mob-link"
+                    href="#">Instagram
+                    </a></li>
+                <li class="soc-mob"><a class="link soc-mob-link"
+                    href="#">Twitter
+                </a></li>
+                <li class="soc-mob"><a class="link soc-mob-link"
+                    href="#">Facebook
+                </a></li>
+                <li class="soc-mob"><a class="link soc-mob-link"
+                    href="#">LinkedIn
+                </a></li>
+            </ul>
+        </div>
+        </div>
+        </div>
+    </header>
     <!--Основний контент-->
     <main>
         
@@ -168,9 +210,9 @@
 </section>
     </main>
       <!--підвал-->
-     <!-- <footer class="footer footer__section">
+      <footer class="footer footer__section">
         <div class="container container__footer">
-
+            <div class="footer__tab">
         <div class="footer__contact">
         <a class="link logo" href="./index.html">Web<span class="footer__logo">Studio</span></a>
         <address class="address footer__address">
@@ -214,6 +256,7 @@
                        </li>
             </ul>
     </div>
+    </div>
 
     <form class="form-footer">
         <label for="mailing-futer" class="form-footer__title">Підпишіться на розсилку</label>
@@ -228,6 +271,6 @@
     </form>
         </div>
 
-    </footer>-->
+    </footer>
 </body>
 </html>

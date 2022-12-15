@@ -14,12 +14,13 @@
     <body>
     <!--Шапка-->
     
-        <!--<header class="header">
+        <header class="header">
             <div class="container header__container">
-
-            <nav class="navigation navigation__flex">
+            <div class="header__logo">
                 <a class="link logo" href="./index.html">Web<span class="logo__part">Studio</span></a>
-                <ul class="list navigation__flex ">
+                </div>
+                <nav class="navigation navigation__flex">
+                    <ul class="list list__menu">
                     <li class="nav-item"><a class="link current nav-item__link" href="./index.html">Студія</a></li>
                     <li class="nav-item"><a class="link nav-item__link" href="./portfollio.html">Портфоліо</a></li>
                     <li class="nav-item"><a class="link nav-item__link" href="#">Контакти</a></li>
@@ -37,9 +38,50 @@
                     </svg>
                     +380961111111</a></li>
                 </ul>
-                
+                <button class="header__btn" type="button" data-menu-open>
+                    <svg class="header__btn-icons" width="24" height="16">
+                        <use href="./images/icons.svg#icon-menu_24px"></use>
+                    </svg>
+                </button>
             </div>
-        </header>-->
+            <div class=" mob-menu is-hidden" data-menu>
+                <div class="container-mob">
+                <button class="mob-btn-close" type="button" data-menu-close>
+                    <svg class="mob-btn-icons" width="40" height="40">
+                        <use href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+                <ul class="list list-mob-menu">
+                    <li class="mob-item"><a class="link mob-item__link" href="./index.html">Студія</a></li>
+                    <li class="mob-item"><a class="link mob-item__link" href="./portfollio.html">Портфоліо</a></li>
+                    <li class="mob-item"><a class="link mob-item__link" href="#">Контакти</a></li>
+                </ul>
+                <div class="contact-mob-menu">
+                <ul class="list address-mob ">
+                    <li class="contact-mob"><a class="link contact-mob__link" href="tel:+380961111111">
+                        +380961111111</a></li>
+                    <li class="contact-mob"><a class="link contact-mail__link" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a></li>
+                   
+                    </ul>
+                <ul class="list soc-mob-menu">
+                    <li class="soc-mob"><a class="link soc-mob-link"
+                        href="#">Instagram
+                        </a></li>
+                    <li class="soc-mob"><a class="link soc-mob-link"
+                        href="#">Twitter
+                    </a></li>
+                    <li class="soc-mob"><a class="link soc-mob-link"
+                        href="#">Facebook
+                    </a></li>
+                    <li class="soc-mob"><a class="link soc-mob-link"
+                        href="#">LinkedIn
+                    </a></li>
+                </ul>
+            </div>
+            </div>
+            </div>
+        </header>
 
         <!--Основний контент-->
         <main>
@@ -87,17 +129,23 @@
         <ul class="list work__flex">
 
             <li class="work__item">
-                <img  src="./images/foto1.jpg" alt="Десктопні додатки" width="370">
+                <img  
+                srcset="./images/foto1.jpg 1x, ./images/foto1-2x.jpg 2x"
+                src="./images/foto1.jpg" alt="Десктопні додатки" width="370">
                 <p class="work__koment">Десктопні додатки</p>
             </li>
  
             <li class="work__item">
-                <img src="./images/foto2.jpg" alt="Мобільні додатки" width="370">
+                <img 
+                srcset="./images/foto2.jpg 1x, ./images/foto2-2x.jpg 2x"
+                src="./images/foto2.jpg" alt="Мобільні додатки" width="370">
                 <p class="work__koment">Мобільні додатки</p>
             </li>
 
             <li class="work__item">
-                <img src="./images/foto3.jpg" alt="Дизайнерські рішення" width="370">
+                <img 
+                srcset="./images/foto3.jpg 1x, ./images/foto3-2x.jpg 2x"
+                src="./images/foto3.jpg" alt="Дизайнерські рішення" width="370">
                 <p class="work__koment">Дизайнерські рішення</p>
             </li>
         </ul>
@@ -111,7 +159,18 @@
             <ul class="list team__flex">
                
                 <li class="team__li">
-                    <img src="./images/igor_demyanenko.jpg" alt="фото Ігоря Дем'яненко" width="270">
+                    <picture>
+                        <source 
+                        srcset="./images/igor_dem.jpg 1x, ./images/igor_dem-2x.jpg 2x"
+                        media="(min-width:1200px)" >
+                        <source
+                        srcset="./images/igor_dem-tab.jpg 1x, ./images/igor_dem-tab-2x.jpg 2x"
+                        media="(min-width:768px)">
+                        <source
+                        srcset="./images/igor_dem-mob.jpg 1x, ./images/igor_dem-mob-2x.jpg 2x"
+                        media="(max-width:767px)">
+                        <img src="./images/igor_dem-mob.jpg" alt="фото Ігоря Дем'яненко" width="450">
+                    </picture>
                     <div class="team__name">
                     <h3 class="team__title">Ігор Дем'яненко</h3>
                     <p class="team__office" lang="en">Product Designer</p>
@@ -149,7 +208,18 @@
                 </li>
             
                 <li class="team__li">
-                    <img src="./images/olga_repina.jpg" alt="фото Ольга Рєпіна" width="270">
+                    <picture>
+                        <source 
+                        srcset="./images/olga.jpg 1x, ./images/olga-2x.jpg 2x"
+                        media="(min-width:1200px)" >
+                        <source
+                        srcset="./images/olga-tab.jpg 1x, ./images/olga-tab-2x.jpg 2x"
+                        media="(min-width:768px)">
+                        <source
+                        srcset="./images/olga-mob.jpg 1x, ./images/olga-mob-2x.jpg 2x"
+                        media="(max-width:767px)">
+                        <img src="./images/olga-mob.jpg" alt="фото Ольга Рєпіна" width="450">
+                    </picture>
                     <div class="team__name">
                     <h3 class="team__title">Ольга Рєпіна</h3>
                     <p class="team__office" lang="en">Frontend Developer</p>
@@ -187,7 +257,18 @@
                 </li>
 
                 <li class="team__li">
-                    <img src="./images/mikola_tarasov.jpg" alt="фото Микола Тарасов" width="270">
+                    <picture>
+                        <source 
+                        srcset="./images/mikola.jpg 1x, ./images/mikola-2x.jpg 2x"
+                        media="(min-width:1200px)" >
+                        <source
+                        srcset="./images/mikola-tab.jpg 1x, ./images/mikola-tab-2x.jpg 2x"
+                        media="(min-width:768px)">
+                        <source
+                        srcset="./images/mikola-mob.jpg 1x, ./images/mikola-mob-2x.jpg 2x"
+                        media="(max-width:767px)">
+                        <img src="./images/mikola-mob.jpg" alt="фото Микола Тарасов" width="450">
+                    </picture>
                     <div class="team__name">
                     <h3 class="team__title">Микола Тарасов</h3>
                     <p class="team__office" lang="en">Marketing</p>
@@ -225,7 +306,18 @@
                 </li>
 
                 <li class="team__li">
-                    <img src="./images/mihailo_ermakov.jpg" alt=" фото Михайло Єрмаков" width="270">
+                    <picture>
+                        <source 
+                        srcset="./images/mihailo.jpg 1x, ./images/mihailo-2x.jpg 2x"
+                        media="(min-width:1200px)" >
+                        <source
+                        srcset="./images/mihailo-tab.jpg 1x, ./images/mihailo-tab-2x.jpg 2x"
+                        media="(min-width:768px)">
+                        <source
+                        srcset="./images/mihailo-mob.jpg 1x, ./images/mihailo-mob-2x.jpg 2x"
+                        media="(max-width:767px)">
+                        <img src="./images/mihailo-mob.jpg" alt="фото Михайло Єрмаков" width="450">
+                    </picture>
                     <div class="team__name">
                     <h3 class="team__title">Михайло Єрмаков</h3>
                     <p class="team__office" lang="en">UI Designer</p>
@@ -317,9 +409,9 @@
         </section>
         </main>
         <!--підвал-->
-    <!--<footer class="footer footer__section">
+    <footer class="footer footer__section">
         <div class="container container__footer">
-
+            <div class="footer__tab">
         <div class="footer__contact">
         <a class="link logo" href="./index.html">Web<span class="footer__logo">Studio</span></a>
         <address class="address footer__address">
@@ -363,6 +455,7 @@
                        </li>
             </ul>
     </div>
+    </div>
 
     <form class="form-footer">
         <label for="mailing-futer" class="form-footer__title">Підпишіться на розсилку</label>
@@ -377,11 +470,11 @@
     </form>
         </div>
 
-    </footer>-->
+    </footer>
 
     <!--модалка-->
 
-    <!--<div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
 
             <button type="button" class="modal-close" data-modal-close>
@@ -450,6 +543,7 @@
         </div>
 
     </div>
-    <script src="./js/modal.js"></script>-->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     </body>
     </html>
