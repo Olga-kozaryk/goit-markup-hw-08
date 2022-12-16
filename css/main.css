@@ -45,6 +45,10 @@ body {
   line-height: 1.71;
 }
 
+.no-sroll {
+  overflow: hidden;
+}
+
 .logo {
   background: transparent;
   color: var(--blue--color);
@@ -137,7 +141,7 @@ body {
   top: 50%;
   left: 50%;
   padding: 40px;
-  width: 320px;
+  width: 90%;
   min-height: 609px;
   background-color: var(--white--color);
   border-radius: 4px;
@@ -434,6 +438,13 @@ body {
     padding-bottom: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header__container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
 
 .logo__part {
   color: var(--blac--color);
@@ -480,6 +491,12 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation__flex {
+    margin-left: 93px;
+    margin-right: auto;
   }
 }
 
@@ -711,6 +728,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1319,6 +1338,11 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 768px) {
+  .form-footer__input {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .form-footer__input {
     margin-bottom: 0;
@@ -1453,10 +1477,15 @@ body {
   margin-top: 0px;
   margin-bottom: 4px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title--color);
+}
+@media screen and (min-width: 1200px) {
+  .title-card {
+    font-size: 18px;
+  }
 }
 
 .p-card {

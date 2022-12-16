@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+   
     }
 .li-project{
     position: relative;
@@ -38,10 +39,14 @@
     margin-top:0px;
     margin-bottom: 4px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title--color);
+
+    @media screen and (min-width:1200px) {
+        font-size: 18px; 
+    }
     }
 .p-card{
     margin-top: 0px;

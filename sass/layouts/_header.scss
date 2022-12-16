@@ -11,11 +11,14 @@
     @media screen and (min-width:768px) {
     padding-top: 0;
     padding-bottom: 0;}
+    @media screen and (min-width:1200px) {
+        justify-content: start;
+    }
 }
 .logo__part{
     color:var(--blac--color);
 }
-.header__btn{
+.header__btn{ 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +45,11 @@ fill: var(--btn--hover--color);
     @media screen and (min-width:768px) {
     display: flex;
     align-items: center;
-  }
+      }
+      @media screen and (min-width:1200px) {
+        margin-left: 93px;
+        margin-right: auto;
+      }
 }
 .list__menu{
     display: none;
@@ -231,6 +238,7 @@ color: var(--primery--color);
 }
 .soc-mob-menu{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 20px;
 }
