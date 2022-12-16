@@ -144,6 +144,7 @@ fill: var(--btn--hover--color);
 .mob-menu{
    display: block;
     position: fixed;
+    z-index: 1;
     top: 0;
     padding-top: 48px;
     padding-bottom: 48px;
